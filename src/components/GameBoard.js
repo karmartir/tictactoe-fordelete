@@ -2,7 +2,7 @@ import React from 'react';
 import Cell from "./Cell";
 
 
-const GameBoard = ({board, winner, playerMove, handleColor}) => {
+const GameBoard = ({board, winner, playerMove, handleColor, isDraw}) => {
 
     const gameBoardStyle = {
         border: '2px solid #2a1f77',
@@ -24,6 +24,7 @@ const GameBoard = ({board, winner, playerMove, handleColor}) => {
                       winner={winner}
                       playerMove={playerMove}
                       handleColor={handleColor}
+                      isDraw={isDraw}
 
                 />)}
         </div>

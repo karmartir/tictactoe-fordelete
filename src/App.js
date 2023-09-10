@@ -58,6 +58,7 @@ const App = () => {
                 winner={winner}
                 playerMove={playerMove}
                 handleColor={handleColor}
+                isDraw={isDraw}
             />
             <br/>
             <br/>

@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Cell = ({item, index, winner, playerMove, handleColor}) => {
+const Cell = ({item, index, winner, isDraw, playerMove, handleColor}) => {
 
+    const backgroundColor = isDraw ? '#ffffff' : (winner ? '#eeddb9' : '#aee1ee')
     const celStyle = {
         border: '2px solid #2a1f77',
         margin: 'auto',
@@ -12,7 +13,7 @@ const Cell = ({item, index, winner, playerMove, handleColor}) => {
         fontWeight: '1000',
         color:  handleColor(item),
         padding: 'auto',
-        background: winner ? '#eeddb9' : '#aee1ee',
+        background: backgroundColor,
         cursor: 'pointer'
     }
     return (
